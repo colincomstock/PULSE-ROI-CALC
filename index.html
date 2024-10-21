@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulse ROI Calculator</title>
+</head>
+<body>
+  <h1>Pulse ROI Calculator</h1>
+
+  <div>
+    <label for="dailyKWh">Daily AVG kWh Usage:</label>
+    <input type="number" id="dailyKWh" value="35">
+  </div>
+
+  <div>
+    <label for="solarFieldSize">Solar Field Size (kW):</label>
+    <input type="number" id="solarFieldSize" value="5">
+  </div>
+
+  <div>
+    <label for="buyRate">Buy Rate ($/kWh):</label>
+    <input type="number" id="buyRate" value="0.15">
+  </div>
+
+  <div>
+    <label for="sellRate">Sell Rate ($/kWh):</label>
+    <input type="number" id="sellRate" value="0.02">
+  </div>
+
+  <button onclick="calculate()">Calculate</button>
+
+  <h2>Results</h2>
+  <p>Hourly Consumption: <span id="hourlyConsumption"></span> kWh</p>
+  <p>Daily Revenue from Grid: <span id="dailyRevenue"></span> $</p>
+  <p>Off-Solar Consumption: <span id="offSolarConsumption"></span> kWh</p>
+  <p>Off-Solar Daily Cost: <span id="offSolarCost"></span> $</p>
+  <p>No ESS Daily Cost: <span id="noESSCost"></span> $</p>
+  <p>Monthly Electricity Bill Before Pulse: <span id="monthlyBill"></span> $</p>
+  <p>Daily Production: <span id="dailyProduction"></span> kWh</p>
+  <p>Daily Savings from Grid Independence: <span id="dailySavings"></span> $</p>
+  <p>Pulse 5kWh Modules Required: <span id="pulseModules"></span></p>
+  <p>Annual Savings: <span id="annualSavings"></span> $</p>
+  <p>Years for ROI: <span id="roiYears"></span></p>
+
+  <script src="index.js"></script>
+</body>
+</html>
