@@ -61,16 +61,15 @@ function calculate() {
     const roiYears = pulseWholeHomeCost / annualSavings;
   
     // Display the results
-    document.getElementById("hourlyConsumption").textContent = hourlyConsumption.toFixed(2);
+    /*document.getElementById("hourlyConsumption").textContent = hourlyConsumption.toFixed(2);
     document.getElementById("dailyRevenue").textContent = dailyRevenue.toFixed(2);
     document.getElementById("offSolarConsumption").textContent = offSolarConsumption.toFixed(2);
     document.getElementById("offSolarCost").textContent = offSolarCost.toFixed(2);
     document.getElementById("noESSCost").textContent = noESSCost.toFixed(2);
     document.getElementById("monthlyBill").textContent = monthlyBill.toFixed(2);
     document.getElementById("dailyProduction").textContent = dailyProduction.toFixed(2);
-    document.getElementById("dailySavings").textContent = dailySavings.toFixed(2);
+    document.getElementById("dailySavings").textContent = dailySavings.toFixed(2);*/
     document.getElementById("pulseModules").textContent = pulseModules;
     document.getElementById("annualSavings").textContent = annualSavings.toFixed(2);
     document.getElementById("roiYears").textContent = roiYears.toFixed(2);
   }
-  
