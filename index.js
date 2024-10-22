@@ -70,6 +70,6 @@ function calculate() {
     document.getElementById("dailyProduction").textContent = dailyProduction.toFixed(2);
     document.getElementById("dailySavings").textContent = dailySavings.toFixed(2);*/
     document.getElementById("pulseModules").textContent = pulseModules;
-    document.getElementById("annualSavings").textContent = annualSavings.toFixed(2);
-    document.getElementById("roiYears").textContent = roiYears.toFixed(2);
+    document.getElementById("annualSavings").textContent = `$${annualSavings.toFixed(2)}`;
+    document.getElementById("roiYears").textContent = roiYears.toFixed(1);
   }
